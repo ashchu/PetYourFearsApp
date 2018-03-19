@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sayings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.chicktech.example.LevelActivity">
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:text="PET YOUR FEARS"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:paddingTop="13px" />
+
+    <ImageButton
+        android:id="@+id/spider_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text3"
+        android:layout_marginTop="81dp"
+        android:layout_toEndOf="@+id/lucasSpider"
+        android:layout_toRightOf="@+id/lucasSpider"
+        android:adjustViewBounds="true"
+        android:background="@android:color/white"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cute_spider"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/lucasSpider"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/imageView3"
+        android:layout_toStartOf="@+id/imageView3"
+        android:src="@drawable/lucas" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:src="@drawable/speechbub" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spider_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/inspirational"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/lucasSpider"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2"
+        android:text="You can do it!"
+        android:textSize="18sp" />
+
+</RelativeLayout>

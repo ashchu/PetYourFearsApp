@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.design.widget.CoordinatorLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:text="PET YOUR FEARS"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:paddingTop="13px" />
+
+    <ImageView
+        android:id="@+id/gifPress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/step2"
+        android:layout_marginBottom="41dp"
+        android:layout_toLeftOf="@+id/challengeButton"
+        android:layout_toStartOf="@+id/challengeButton" />
+    <!--app: srcCompat="@drawable/ic_launcher_background" />-->
+
+    <TextView
+        android:id="@+id/pressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gifPress"
+        android:layout_marginBottom="27dp"
+        android:layout_toEndOf="@+id/step3img"
+        android:layout_toRightOf="@+id/step3img"
+        android:text="Touch the Bug!"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/challengeButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:background="@android:color/black"
+        android:text="I'm Ready!"
+        android:textColor="@android:color/white" />
+
+    <!--android:onClick="openLevelActivity"-->
+
+    <TextView
+        android:id="@+id/step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gifPress"
+        android:layout_alignStart="@+id/gifPress"
+        android:layout_centerVertical="true"
+        android:text="Be Fearless!"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/step3img"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/challengeButton"
+        android:layout_alignLeft="@+id/step2"
+        android:layout_alignStart="@+id/step2"
+        android:layout_marginBottom="19dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/step3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/step3img"
+        android:layout_alignEnd="@+id/pressText"
+        android:layout_alignRight="@+id/pressText"
+        android:layout_marginBottom="29dp"
+        android:text="You can do it!"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/step2Image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignEnd="@+id/pressText"
+        android:layout_alignRight="@+id/pressText"
+        android:layout_below="@+id/pressText" />
+
+    <TextView
+        android:id="@+id/bo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Instructions"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</RelativeLayout>
+
+
+    <!--</android.support.design.widget.CoordinatorLayout>-->
